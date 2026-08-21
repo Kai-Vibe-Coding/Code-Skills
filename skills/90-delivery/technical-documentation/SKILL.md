@@ -54,25 +54,28 @@ Documentation that's stale, scattered, or written for the wrong audience is wors
 
 A README skeleton structured for fast onboarding with links to deeper docs:
 
-```markdown
+````markdown
 # Order Service
 
 Handles order creation, discount application, and fulfillment status for the storefront.
 
 ## Quick start
+
 ```bash
 dotnet restore && dotnet run --project src/OrderService.Api
 ```
 
 ## Documentation
+
 - Architecture overview: docs/architecture.md
 - Architecture Decision Records: docs/adr/
 - Operational runbook: docs/runbook.md
 - API reference: docs/api-reference.md
 
 ## Contributing
+
 See CONTRIBUTING.md for branching and commit conventions.
-```
+````
 
 - The README stays short and links out to purpose-specific documents rather than embedding everything inline.
 - Each linked document has a single clear purpose (architecture, decisions, operations, API), avoiding overlap and duplication.

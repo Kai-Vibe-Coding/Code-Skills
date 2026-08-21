@@ -74,7 +74,7 @@ generated index: **[docs/INDEX.md](docs/INDEX.md)**.
 
 ## Repository layout
 
-```
+```text
 .
 ├── README.md
 ├── CONTRIBUTING.md
