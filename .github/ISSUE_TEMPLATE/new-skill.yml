@@ -1,0 +1,55 @@
+name: New skill proposal
+description: Propose a new skill for the Code-Skills catalog
+title: "[New Skill]: "
+labels: ["new-skill"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Proposed skill name (kebab-case)
+      placeholder: e.g. outbox-pattern
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - core
+        - planning
+        - architecture
+        - backend
+        - frontend
+        - database
+        - devops
+        - quality
+        - security
+        - delivery
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: One-sentence description
+      description: Must start with "Use when" and be under 400 characters.
+      placeholder: Use when you need to publish domain events reliably alongside a database transaction.
+    validations:
+      required: true
+
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Why is this skill needed?
+      description: What gap does it fill? Is there overlap with an existing skill?
+    validations:
+      required: true
+
+  - type: textarea
+    id: outline
+    attributes:
+      label: Rough workflow outline
+      description: A short bullet list of the steps this skill would guide an agent through.
+    validations:
+      required: false
